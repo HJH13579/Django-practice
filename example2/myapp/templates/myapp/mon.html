@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+
+{% block content%}
+월요 웹툰
+<a href="{% url 'myapp:index' %}">메인으로!</a>
+<a href="{% url 'pages:index' %}">메인으로!</a>
+<a href="/pages/index/">메인으로!</a>
+
+{% endblock %}
+
+{% block sub%} 
+재밌는 날
+  {% block mon %}
+
+  {% endblock mon %}
+{% endblock sub%}
