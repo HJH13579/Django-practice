@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>디테일!</h1>
+
+  {{article}}
+  <h1>{{article.title}}</h1>
+  <h3>{{article.created_at}}</h3>
+  <hr>
+  <p>{{article.content}}</p>
+{% endblock content %}
+
