@@ -14,7 +14,7 @@ def detail(request, pk):
     context = {
         'article' : article
     }
-    return render(request, 'articles/detail/html', context)
+    return render(request, 'articles/detail.html', context)
 
 def new(request):
     return render(request, 'articles/new.html')
